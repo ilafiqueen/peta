@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Peta Digital</title>
+    <link rel="stylesheet" href="beranda.css"/>
+</head>
+    <body>
+        <header> 
+            <nav class="navbar">
+                <div class="navbar-toggle">
+                    
+                </div>
+                <img class="navbar-logo" src="logo.png" alt="logo teknik geomatika"/>
+                <ul class="navbar-group">
+                    <a href="beranda.html"></a>
+                    <li class="navbar-item">
+                        Beranda
+                    </li>
+
+                    <li class="navbar-item">
+                        Peta Digital
+                        <ul class="navbar-subgroup">
+                            <a href="peta.html">
+                                <li class="navbar-item">Deskripsi</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">Jenis Peta Digital
+                        <ul class="navbar-subgroup">
+                            <a href="a2 digital statis.html">
+                                <li class="navbar-item">Digital Statis</li>
+                            </a>
+                            <a href="a3 digital dinamis.html">
+                                <li class="navbar-item">Digital Dinamis</li>
+                            </a>
+                    </ul>
+                    </li>
+                </ul>
+                <div class="navbar-action">
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+            </nav>
+        </header>
+        <script> 
+            const navItem = document.querySelectorAll(".navbar-group > .navbar-item");      
+            navItem.forEach((nav) => {
+                const navSubGroup = nav.querySelector(".navbar-subgroup");
+
+                if (navSubGroup) {
+                    nav.addEventListener("mouseenter", () => {
+                        navSubGroup.classList.add("navbar-expand");
+                    });
+                    nav.addEventListener("mouseleave", () => {
+                        navSubGroup.classList.remove("navbar-expand");
+                    });
+                    }
+            });
+
+            const menuToggle = document.querySelector(".navbar-toggle");
+
+            menuToggle.addEventListener("click", (e) => {
+                document.querySelector(".navbar-group").classList.toggle("navbar-expand");
+                document
+                    .querySelector(".navbar-action")
+                    .classList.toggle("navbar-expand");
+                    e.target.classList.toggle("navbar-expand");
+
+            });
+
+        </script>
+         
+        <div class="container">
+            <h1 class="judul"> Tugas 3 SIG Internet </h1>
+            <h2 class="sub-judul"> Membuat Website Mensgenai Peta Digital dan Jenis-Jenisnya</h2>
+            <h4 class="judul-credit">Website ini dibuat oleh:</h4>
+            <img src="foto afi.png" alt="foto nur ilafi queen khadijah" class="foto"/>
+            <p class="credit"> Nur Ilafi Queen Khadijah</p>
+            <p class="credit"> NIM 117220056</p>
+            
+        </div>
+        
+    </body>
+</html>

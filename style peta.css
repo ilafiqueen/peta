@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*outline: 1px solid tomato;*/
+    /*align-items: center; */
+    padding: 1rem 2rem;
+    background-color: white
+}
+
+.navbar-toggle {
+    right: 1rem;
+    position: absolute;
+    display: block;
+    /* outline: 1px solid tomato; */
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.55rem;
+    top: 3.5rem;
+}
+
+.navbar-toggle::before, 
+.navbar-toggle::after {
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 2rem;
+    background-color: black;
+    transform-origin: left;
+    transition: all 200ms;
+}
+
+
+.navbar-toggle::after {
+    top: 100%;
+}
+    
+.navbar-toggle.navbar-expand::before {
+    transform: rotate(45deg);
+    width: 2.1rem;
+}
+
+.navbar-toggle.navbar-expand::after {
+    transform: rotate(-45deg);
+    width: 2.1rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar-logo {
+    height :6rem;
+    width : 5rem;
+}
+
+.navbar-group {
+    display :none;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* outline: 1px solid blue; */
+    padding: 1rem 0;
+}
+
+.navbar-group.navbar-expand {
+    display: flex;
+    animation: menuReveal 0.3s linear;
+}
+
+.navbar-item {
+    padding: 0.5rem;
+    /* outline: 1px solid green; */
+    position: relative;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+}
+
+.navbar-item:hover {
+    border-bottom: 1px solid black;
+}
+
+
+.navbar .navbar-subgroup {
+   position: relative;
+   top: 100%;
+   left: 0;
+   background-color: white;
+   padding: 0.5rem;
+   z-index: 10;
+}
+
+
+@keyframes menuReveal {
+    from {
+        transform: translateY(-0.5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar .navbar-action button {
+    border: 1px solid black;
+    background-color: none;
+    padding : 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.navbar .navbar-action .navbar-expand {
+    display: inherit;
+    
+}
+
+.navbar .navbar-action button:hover {
+    box-shadow: 5px 5px 0 black;
+    transform: translate(-5px, -5px);
+}
+
+/* Fungsi Tampilan Ukuran HP-Mobile */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightslategray;
+    }
+    
+}
+
+/* Fungsi Tampilan Ukuran Tablet */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: rgb(174, 180, 187);
+    }
+}
+
+/* Fungsi Tampilan Ukuran Desktop */
+@media only screen and (min-width: 992px) {
+    body {
+        background-color: lightgrey;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .navbar .navbar-group {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .navbar .navbar-action {
+        display: inherit;
+    }
+
+    .navbar .navbar-subgroup {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        padding: 0.5rem;
+        display: none;
+        border: 1px solid gray;
+        box-shadow: 5px 5px 0 black;
+        z-index: 10;
+     }
+
+     .navbar-subgroup.navbar-expand {
+        display: block;
+        animation: menuReveal 0.3s linear;
+    }
+
+    .navbar-toggle{
+        display: none;
+}
+
+}
+
+
+.gambar-peta1 {
+    width: 50%;
+    height: justify-content;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.judul {
+    width: 40rem;
+    word-wrap: break-word;
+    padding: 1rem 1rem;
+}
+
+.sub-judul {
+    width: 40rem;
+    word-wrap: break-word;
+    padding: 0;
+    font-style: italic;
+}
+
+.isi-baris {
+    width: 42rem;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+}
+
+.judul2 {
+    margin : 0.5rem;
+    padding: 0.1rem 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.poin-baris {
+    display: block;
+    width: 53%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-self: flex-start;
+    gap: 0.1rem;
+    font-style: bold;
+}

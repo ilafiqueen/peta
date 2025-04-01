@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Peta Digital</title>
+    <link rel="stylesheet" href="digital statis.css"/>
+</head>
+    <body>
+        <header> 
+        <nav class="navbar">
+            <div class="navbar-toggle">
+                
+            </div>
+            <img class="navbar-logo" src="logo.png" alt="logo teknik geomatika"/>
+            <ul class="navbar-group">
+                <a href="beranda.html">
+                    <li class="navbar-item">Beranda</li>
+                </a>
+
+                <li class="navbar-item">
+                    Peta Digital
+                    <ul class="navbar-subgroup">
+                        <a href="peta.html">
+                            <li class="navbar-item">Deskripsi</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="navbar-item">Jenis Peta Digital
+                    <ul class="navbar-subgroup">
+                        <a href="a2 digital statis.html">
+                            <li class="navbar-item">Digital Statis</li>
+                        </a>
+                        <a href="a3 digital dinamis.html">
+                            <li class="navbar-item">Digital Dinamis</li>
+                        </a>
+                </ul>
+                </li>
+            </ul>
+            <div class="navbar-action">
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+        </nav>
+        </header>
+    <script> 
+        const navItem = document.querySelectorAll(".navbar-group > .navbar-item");      
+        navItem.forEach((nav) => {
+            const navSubGroup = nav.querySelector(".navbar-subgroup");
+
+            if (navSubGroup) {
+                nav.addEventListener("mouseenter", () => {
+                    navSubGroup.classList.add("navbar-expand");
+                });
+                nav.addEventListener("mouseleave", () => {
+                    navSubGroup.classList.remove("navbar-expand");
+                });
+                }
+        });
+
+        const menuToggle = document.querySelector(".navbar-toggle");
+
+        menuToggle.addEventListener("click", (e) => {
+            document.querySelector(".navbar-group").classList.toggle("navbar-expand");
+            document
+                .querySelector(".navbar-action")
+                .classList.toggle("navbar-expand");
+                e.target.classList.toggle("navbar-expand");
+
+        });
+
+    </script>
+        
+    <div class="container"> 
+        <h1 class="judul"> Peta Digital Dinamis</h1>
+        <body>
+            <p class="sub-judul">Peta digital dinamis adalah peta yang dapat berubah atau diperbarui secara real-time berdasarkan data yang 
+                terus diperbarui, seperti data cuaca, lalu lintas, atau navigasi.
+                Simak selengkapnya di artikel berikut ini.
+            </p>
+            <img class="gambar-peta1" src="geoportal.png" alt="Ilustrasi Peta Digital Statis"/>
+            <p class="isi-baris">
+                Dalam era digital yang serba cepat, informasi geospasial menjadi semakin penting dalam berbagai aspek kehidupan, 
+                mulai dari navigasi hingga perencanaan tata ruang. Salah satu bentuk representasi informasi geospasial yang terus 
+                berkembang adalah peta digital dinamis. 
+            </p>
+            <p class="isi-baris">
+                Berbeda dengan peta statis yang bersifat tetap, peta digital dinamis menawarkan fleksibilitas dan interaktivitas tinggi, 
+                memungkinkan pengguna untuk memperoleh data yang selalu diperbarui secara real-time. Dengan teknologi ini, peta tidak 
+                lagi sekadar gambar dua dimensi, tetapi menjadi alat yang canggih untuk memahami dan menganalisis perubahan lingkungan secara langsung.
+            </p>
+            <h2 class="judul2">Pengertian Peta Digital Dinamis</h2>
+            <p class="isi-baris">
+                Peta digital dinamis adalah representasi peta dalam format digital yang memiliki kemampuan untuk menampilkan informasi secara interaktif 
+                dan real-time. Berbeda dengan peta digital statis yang hanya menyajikan informasi tetap, peta digital dinamis memungkinkan pengguna untuk 
+                memperbesar, memperkecil, memutar, serta memperbarui data sesuai dengan perubahan kondisi di lapangan.
+            </p>
+            <p class="isi-baris">
+                Peta ini biasanya terintegrasi dengan sistem informasi geografis (SIG) dan memanfaatkan teknologi berbasis internet, sensor, serta satelit 
+                untuk menyajikan informasi yang terus diperbarui. Contohnya adalah peta navigasi seperti Google Maps, Waze, dan OpenStreetMap, yang dapat 
+                menampilkan kondisi lalu lintas terkini dan rute alternatif secara otomatis.
+            </p>
+            <h2 class="judul2">Karakteristik Peta Digital Dinamis</h2>
+            <p class="isi-baris">
+                Peta digital statis memiliki beberapa karakteristik yang membedakannya dari jenis peta digital lainnya. Berikut adalah beberapa ciri utama dari peta digital statis:
+            </p>
+            <p class="isi-baris">1. Interaktif</p>
+            <p class="isi-baris"> Peta digital dinamis memungkinkan pengguna untuk berinteraksi secara langsung, seperti memperbesar, memperkecil, memutar, atau menampilkan 
+                informasi tambahan dengan mengklik suatu area</p>
+            <p class="isi-baris">2. Diperbarui Secara Real-Time</p>
+            <p class="isi-baris">Data yang ditampilkan dapat terus diperbarui sesuai dengan kondisi terkini, misalnya perubahan lalu lintas, cuaca, atau status suatu lokasi</p>
+            <p class="isi-baris">3. Terintegrasi dengan Database</p>
+            <p class="isi-baris">Peta digital dinamis sering kali terhubung dengan sistem informasi geografis (SIG) atau basis data yang memungkinkan akses ke informasi tambahan, 
+                seperti data populasi, infrastruktur, atau kondisi lingkungan.</p>
+            <h2 class="judul2">Contoh Peta Digital Dinamis</h2>
+            <img class="gambar-peta2" src="osm.jpg" alt="Ilustrasi Peta Digital Statis"/>
+            <p class="sub-judul">Gambar di atas adalah tampilan pengguna saat mengakses laman OpenStreetMap.</p>
+            <h2 class="judul2">  </h2>
+            <h2 class="judul2">Kelebihan Peta Digital Dinamis</h2>
+            <p class="isi-baris">Peta digital dinamis memiliki beberapa kelebihan yang membuatnya tetap relevan dan digunakan dalam berbagai keperluan. Beberapa kelebihan 
+                peta digital dinamis antara lain:</p>
+            <p class="isi-baris">1. Menyediakan Informasi Secara Real-Time</p>
+            <p class="isi-baris">
+                Peta digital dinamis mampu menampilkan data yang selalu diperbarui, seperti kondisi lalu lintas, cuaca, atau perubahan geografis, 
+                sehingga pengguna dapat memperoleh informasi terkini.
+            </p>
+            <p class="isi-baris">2. Mempermudah Analisis dan Pengambilan Keputusan</p>
+            <p class="isi-baris">Peta ini sering digunakan dalam berbagai bidang, seperti perencanaan kota, mitigasi bencana, dan penelitian lingkungan, 
+                karena kemampuannya dalam menyajikan data kompleks dalam bentuk visual yang mudah dipahami.</p>
+            <p class="isi-baris">3. Terintegrasi dengan Berbagai Sumber Data</p>
+            <p class="isi-baris">Peta digital dinamis dapat menggabungkan informasi dari berbagai sumber, termasuk data satelit, sensor IoT, 
+                dan basis data geografis lainnya, untuk memberikan gambaran yang lebih lengkap dan akurat.</p>
+            <p class="isi-baris">4. Aksesibilitas yang Lebih Luas</p>
+            <p class="isi-baris">Karena berbasis digital, peta ini dapat diakses melalui berbagai perangkat seperti komputer, tablet, atau smartphone, 
+                serta dapat digunakan oleh berbagai kalangan tanpa memerlukan keahlian teknis yang mendalam.</p>
+            <p class="isi-baris">5. Efisiensi dalam Penyebaran Informasi</p>
+            <p class="isi-baris">Dengan adanya teknologi berbasis web, peta digital dinamis dapat diperbarui dan dibagikan dengan cepat tanpa perlu 
+                mencetak ulang seperti pada peta konvensional.
+            </p>
+            <h2 class="judul2">Kekurangan Peta Digital Dinamis</h2>
+            <p class="isi-baris">1. Bergantung Pada Koneksi Internet</p>
+            <p class="isi-baris">Sebagian besar peta digital dinamis membutuhkan akses internet untuk memuat dan memperbarui data secara real-time. 
+                Jika koneksi tidak stabil atau terputus, informasi pada peta bisa menjadi tidak akurat atau bahkan tidak dapat diakses.
+            </p>
+            <p class="isi-baris">2. Rentan terhadap Kesalahan Data</p>
+            <p class="isi-baris">Karena mengandalkan berbagai sumber data, peta digital dinamis dapat mengalami ketidakakuratan akibat kesalahan input, 
+                keterlambatan pembaruan, atau kesalahan algoritma dalam mengolah informasi.
+            </p>
+            <p class="isi-baris">3. Kompleksitas dalam Pengelolaan dan Pengembangan</p>
+            <p class="isi-baris">Pembuatan dan pemeliharaan peta digital dinamis membutuhkan keahlian teknis dalam pemrograman GIS, manajemen basis data s
+                pasial, serta integrasi dengan sensor atau API pihak ketiga, yang bisa menjadi tantangan bagi organisasi tanpa sumber daya yang memadai.</p>
+        </body>
+    </div>
+        
+    </body>
+</html>

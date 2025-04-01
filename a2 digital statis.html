@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Peta Digital</title>
+    <link rel="stylesheet" href="digital statis.css"/>
+</head>
+    <body>
+        <header> 
+        <nav class="navbar">
+            <div class="navbar-toggle">
+                
+            </div>
+            <img class="navbar-logo" src="logo.png" alt="logo teknik geomatika"/>
+            <ul class="navbar-group">
+                <a href="beranda.html">
+                    <li class="navbar-item">Beranda</li>
+                </a>
+
+
+                <li class="navbar-item">
+                    Peta Digital
+                    <ul class="navbar-subgroup">
+                        <a href="peta.html">
+                            <li class="navbar-item">Deskripsi</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="navbar-item">Jenis Peta Digital
+                    <ul class="navbar-subgroup">
+                        <a href="a2 digital statis.html">
+                            <li class="navbar-item">Digital Statis</li>
+                        </a>
+                        <a href="a3 digital dinamis.html">
+                            <li class="navbar-item">Digital Dinamis</li>
+                        </a>
+                </ul>
+                </li>
+            </ul>
+            <div class="navbar-action">
+                <button>Login</button>
+                <button>Register</button>
+            </div>
+        </nav>
+        </header>
+    <script> 
+        const navItem = document.querySelectorAll(".navbar-group > .navbar-item");      
+        navItem.forEach((nav) => {
+            const navSubGroup = nav.querySelector(".navbar-subgroup");
+
+            if (navSubGroup) {
+                nav.addEventListener("mouseenter", () => {
+                    navSubGroup.classList.add("navbar-expand");
+                });
+                nav.addEventListener("mouseleave", () => {
+                    navSubGroup.classList.remove("navbar-expand");
+                });
+                }
+        });
+
+        const menuToggle = document.querySelector(".navbar-toggle");
+
+        menuToggle.addEventListener("click", (e) => {
+            document.querySelector(".navbar-group").classList.toggle("navbar-expand");
+            document
+                .querySelector(".navbar-action")
+                .classList.toggle("navbar-expand");
+                e.target.classList.toggle("navbar-expand");
+
+        });
+
+    </script>
+        
+    <div class="container"> 
+        <h1 class="judul"> Peta Digital Statis</h1>
+        <body>
+            <p class="sub-judul">Peta Digital Statis adalah peta dalam format digital yang bersifat tetap 
+                dan tidak dapat diubah atau diperbarui secara langsung oleh pengguna.
+                Simak selengkapnya di artikel berikut ini.
+            </p>
+            <img class="gambar-peta1" src="sub-judul peta.jpg" alt="Ilustrasi Peta Digital Statis"/>
+            <p class="isi-baris">
+                Dalam era digital saat ini, perkembangan teknologi pemetaan semakin pesat dengan hadirnya berbagai jenis peta digital yang 
+                memudahkan akses dan analisis informasi geografis. Salah satu jenis peta digital yang banyak digunakan adalah peta digital statis, 
+                yang memiliki karakteristik tetap dan tidak dapat diubah secara langsung oleh pengguna.
+            </p>
+            <p class="isi-baris">
+                Peta ini sering digunakan dalam berbagai bidang, seperti penelitian, pendidikan, dan dokumentasi, karena kemudahan dalam distribusi 
+                serta kompatibilitasnya dengan berbagai perangkat. Untuk memahami lebih lanjut, berikut adalah penjelasan mengenai peta digital statis, 
+                termasuk pengertian, karakteristik, kelebihan, serta contoh penggunaannya.
+            </p>
+            <h2 class="judul2">Pengertian Peta Digital Statis</h2>
+            <p class="isi-baris">
+                Peta digital statis adalah jenis peta yang dibuat dalam format digital tetapi tidak memiliki kemampuan untuk diperbarui atau dimanipulasi 
+                secara langsung oleh pengguna. Peta ini bersifat tetap, artinya informasi yang ditampilkan tidak berubah kecuali dilakukan pembaruan oleh pembuatnya. 
+                Umumnya, peta digital statis disajikan dalam bentuk gambar dengan format seperti JPEG, PNG, TIFF, atau PDF, yang dapat diakses melalui perangkat komputer 
+                atau mobile tanpa memerlukan perangkat lunak pemetaan khusus.
+            </p>
+            <p class="isi-baris">
+                Peta digital statis sering digunakan dalam berbagai keperluan, seperti publikasi ilmiah, laporan penelitian, presentasi, dan media cetak, karena kemudahan 
+                dalam distribusi dan penggunaannya. Meskipun tidak interaktif seperti peta digital dinamis, peta jenis ini tetap memiliki nilai penting dalam menyajikan 
+                informasi geografis secara visual yang jelas dan mudah dipahami.
+            </p>
+            <h2 class="judul2">Karakteristik Peta Digital Statis</h2>
+            <p class="isi-baris">
+                Peta digital statis memiliki beberapa karakteristik yang membedakannya dari jenis peta digital lainnya. Berikut adalah beberapa ciri utama dari peta digital statis:
+            </p>
+            <p class="isi-baris">1. Tidak Interaktif</p>
+            <p class="isi-baris"> Peta digital statis hanya dapat ditampilkan dan dibaca tanpa adanya fitur interaktif seperti zoom, pan, atau pencarian lokasi. Informasi yang ada 
+                pada peta bersifat tetap dan tidak dapat diubah oleh pengguna.</p>
+            <p class="isi-baris">2. Format Gambar atau Dokumen</p>
+            <p class="isi-baris">Peta ini umumnya disimpan dalam format gambar seperti JPEG, PNG, TIFF, atau dalam bentuk dokumen seperti PDF.</p>
+            <p class="isi-baris">3. Informasi Tetap dan Tidak Dapat Diperbarui Langsung</p>
+            <p class="isi-baris">Peta digital statis tidak dapat diperbarui secara otomatis atau langsung oleh pengguna. Jika ada perubahan data, peta harus diperbarui dan dibuat 
+                ulang oleh pembuatnya.</p>
+            <h2 class="judul2">Contoh Peta Digital Statis</h2>
+            <img class="gambar-peta2" src="KRB G. Sundoro.jpg" alt="Ilustrasi Peta Digital Statis"/>
+            <p class="sub-judul">Peta di atas adalah Peta KRB Gunung Sindoro. Peta tersebut dikeluarkan oleh Kementrian ESDM dan hanya pihak KESDM yang dapat mengubah 
+                serta memperbarui peta tersebut.</p>
+            <h2 class="judul2">  </h2>
+            <h2 class="judul2">Kelebihan Peta Digital Statis</h2>
+            <p class="isi-baris">Peta digital statis memiliki beberapa kelebihan yang membuatnya tetap relevan dan digunakan dalam berbagai keperluan. Beberapa kelebihan 
+                peta digital statis antara lain:</p>
+            <p class="isi-baris">1. Mudah Dibaca dan Digunakan</p>
+            <p class="isi-baris">
+                Karena sifatnya yang statis, peta ini lebih sederhana dan tidak memerlukan keterampilan khusus untuk mengakses atau menggunakannya. 
+                Pengguna hanya perlu melihat peta tanpa harus melakukan navigasi interaktif.
+            </p>
+            <p class="isi-baris">2. Dapat Diakses Tanpa Koneksi Internet</p>
+            <p class="isi-baris">Berbeda dengan peta digital dinamis yang sering memerlukan akses internet untuk menampilkan data secara real-time, 
+                peta digital statis dapat digunakan kapan saja tanpa tergantung pada jaringan internet.</p>
+            <p class="isi-baris">3. Format File yang Fleksibel</p>
+            <p class="isi-baris">Peta ini tersedia dalam berbagai format seperti JPEG, PNG, TIFF, atau PDF, yang memungkinkan pengguna untuk 
+                membukanya di berbagai perangkat, baik komputer maupun smartphone, tanpa memerlukan software khusus.</p>
+            <p class="isi-baris">4. Cocok untuk Keperluan Dokumentasi dan Publikasi</p>
+            <p class="isi-baris">Dalam laporan ilmiah, jurnal, atau buku, peta digital statis lebih sesuai digunakan karena dapat disesuaikan dengan 
+                tata letak halaman dan tetap mempertahankan format aslinya tanpa mengalami perubahan tampilan.</p>
+            <p class="isi-baris">5. Keamanan Data yang Lebih Baik</p>
+            <p class="isi-baris">Peta digital statis lebih sulit untuk dimanipulasi oleh pengguna yang tidak berwenang dibandingkan peta digital dinamis 
+                yang memungkinkan modifikasi atau pembaruan data secara langsung.</p>
+            <h2 class="judul2">Kekurangan Peta Digital Statis</h2>
+            <p class="isi-baris">1. Tidak Interaktif</p>
+            <p class="isi-baris">Peta digital statis hanya menampilkan informasi dalam bentuk gambar tanpa fitur interaktif seperti zoom in, zoom out, 
+                atau pencarian lokasi secara dinamis. Hal ini membatasi pengguna dalam menjelajahi peta secara lebih mendalam.</p>
+            <p class="isi-baris">2. Kurang Efektif untuk Analisis Data Geospasial</p>
+            <p class="isi-baris">Peta digital statis tidak mendukung analisis data geospasial secara langsung, seperti perhitungan jarak, 
+                overlay dengan data lain, atau pemetaan tematik berbasis data real-time.
+            </p>
+            <p class="isi-baris">3. Keterbatasan dalam Penyajian Data yang Kompleks</p>
+            <p class="isi-baris">Jika suatu wilayah memiliki banyak informasi detail yang perlu ditampilkan, 
+                peta digital statis bisa menjadi sulit dibaca karena keterbatasan ruang dan resolusi gambar.</p>
+        </body>
+    </div>
+        
+    </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Peta Digital</title>
+    <link rel="stylesheet" href="style peta.css"/>
+</head>
+    <body>
+        <header> 
+            <nav class="navbar">
+                <div class="navbar-toggle">
+                    
+                </div>
+                <img class="navbar-logo" src="logo.png" alt="logo teknik geomatika"/>
+                <ul class="navbar-group">
+                    <a href="beranda.html">
+                        <li class="navbar-item">Beranda</li>
+                    </a>
+
+                    <li class="navbar-item">
+                        Peta Digital
+                        <ul class="navbar-subgroup">
+                            <a href="peta.html">
+                                <li class="navbar-item">Deskripsi</li>
+                            </a>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">Jenis Peta Digital
+                        <ul class="navbar-subgroup">
+                            <a href="a2 digital statis.html">
+                                <li class="navbar-item">Digital Statis</li>
+                            </a>
+                            <a href="a3 digital dinamis.html">
+                                <li class="navbar-item">Digital Dinamis</li>
+                            </a>
+                    </ul>
+                    </li>
+                </ul>
+                <div class="navbar-action">
+                    <button>Login</button>
+                    <button>Register</button>
+                </div>
+            </nav>
+        </header>
+        <script> 
+            const navItem = document.querySelectorAll(".navbar-group > .navbar-item");      
+            navItem.forEach((nav) => {
+                const navSubGroup = nav.querySelector(".navbar-subgroup");
+
+                if (navSubGroup) {
+                    nav.addEventListener("mouseenter", () => {
+                        navSubGroup.classList.add("navbar-expand");
+                    });
+                    nav.addEventListener("mouseleave", () => {
+                        navSubGroup.classList.remove("navbar-expand");
+                    });
+                    }
+            });
+
+            const menuToggle = document.querySelector(".navbar-toggle");
+
+            menuToggle.addEventListener("click", (e) => {
+                document.querySelector(".navbar-group").classList.toggle("navbar-expand");
+                document
+                    .querySelector(".navbar-action")
+                    .classList.toggle("navbar-expand");
+                    e.target.classList.toggle("navbar-expand");
+
+            });
+
+        </script>
+            
+        <div class="container">
+            <h1 class="judul">Peta Digital, Ini Pengertian, Sejarah, Metode, dan Manfaatnya!</h1>
+            <body> 
+                <p class="sub-judul">Peta digital adalah metode penggambaran citra bumi dengan media grafis.
+                    Simak selengkapnya di artikel berikut ini.
+                </p>
+                <video class="gambar-peta1" controls src="teaser.mp4"></video>
+                <p class="isi-baris"> 
+                    Era digitalisasi sudah semakin meluas hingga merambah ke teknologi pemetaan yang umum
+                    dikenal dengan istilah peta. Manfaat petadigital sangatalah banyak.
+                </p>
+                <p class="isi-baris">
+                    Misalnya untuk membantu mengelola sumber daya alam, mengatur tata kelola, hingga upaya
+                    pencegahan risiko bencana alam.
+                </p>
+                <p class="isi-baris">
+                    Jika kamu belum tahu banyak mengenai peta digital, yuk cermati artikel ini karena akan
+                    menjelaskan secara lengkap fakta-fakta pemetaan digital.
+                </p>
+                <h2 class="judul2">Pengertian Peta Digital</h2>
+                <p class="isi-baris">
+                    Peta digital adalah metode penggambaran citra bumi dengan media grafis. Data dari hasil 
+                    penggambaran citra bumi akan disimpan di sistem komputer demi meningkatkan aksesibilitas 
+                    dan mudah diperbarui.
+                </p>
+                <p class="isi-baris">
+                    Tingkat keakuratan peta digital juga lebih tinggi dibandingkan peta konvensional karena 
+                    visualisasi permukaan bumi dirangkum dalam format digital berteknologi mutakhir.</p>
+                    <p class="isi-baris">
+                        Bahkan hasil citra bumi lebih terlihat jelas dan menggambarkan kondisi sebenarnya di 
+                        lapangan. Mulai dari kondisi topografi, morfologi, dan berbagai kondidi lainnya.
+                    </p>
+                    <p class="isi-baris">
+                        Melalui peta digital, pengguna dapat memantau kondisi geografis suatu area dan 
+                        memungkinkan mereka mengobservasi, mengumpulkan data, hingga menganalisisnya.
+                    </p>
+                    <h2 class="judul2">Sejarah Peta Digital</h2>
+                    <p class="isi-baris">
+                        Malansir dari laman web Map Telligent, peta digital merupakan produk pengembangan 
+                        dari ilmu kartografi. Pada abad ke-17 hingga abad ke-19, setiap negara memiliki gambar 
+                        peta versi mereka sendiri yang disimpan sebagai data geografis wilayah kenegaraan.
+                    </p>
+                    <p class="isi-baris">
+                        Lalu, di tahun 1970-an, penggambaran peta mulai menggunakan metode GIS 
+                        (Geographic Information System) yang menampilkan informasi geografis dalam layar digital 
+                        menggantikan metode kartografi tradisional.
+                    </p>
+                    <p class="isi-baris">
+                        Berlanjut setelah itu, muncul teknologi GPS (Global Positioning System) yang menggunakan 
+                        bantuan citra dari satelit. Teknologi inipun digunakan oleh militer Amerika Serikat untuk 
+                        membantu operasi militer mereka.
+                    </p>
+                    <p class="isi-baris">
+                        Kemudian, teknologi GPS kembali dikembangkan dan melahirkan teknologi peta digital yang 
+                        resmi diperkenalkan ke publik tahun 2003. Awalnya peta digital hanya bisa tersedia di 
+                        beberapa area saja, tetapi setiap tahun cakupan peta digital makin meluas hingga kini sudah 
+                        berhasil memetakan seluruh permukaan bumi.
+                    </p>
+                    <h2 class="judul2">Kelebihan Peta Digital</h2>
+                    <p class="isi-baris">
+                        Jika kamu membandingkan peta digital dan peta konvensional, mungkin secara otomatis kamu akan 
+                        berpikir peta digital memiliki lebih banyak keunggulan daripada peta konvensional. Untuk mengetahui 
+                        kebenarannya, simak kelebihan dan kekurangan peta digital berikut ini.
+                    </p>
+                    <h3 class="poin-baris">  1. Peta Digital Dapat Mencakup Seluruh Area </h3>
+                    <p class="isi-baris">
+                        Jika membandingkan peta digital dan peta konvensional dalam memetakan seluruh area di permukaan bumi, 
+                        yang lebih unggul jelas peta digital. Sebab, peta digital menggunakan teknologi satelit yang dapat 
+                        menjelajah berbagai lokasi di seluruh dunia hingga ke area terpencil sekalipun.
+                    </p>
+                    <h3 class="poin-baris">  2. Tingkat Akurasi Tinggi </h3>
+                    <p class="isi-baris">
+                        Tingkat akurasi peta digital jauh lebih tinggi dibandingkan peta konvensional. Dikarenakan menerapkan 
+                        teknologi paling mutakhir saat ini, peta digital dapat dengan cepat memperbarui kondisi topografi bumi 
+                        sesuai dengan kenyataan saat ini.
+                    </p>
+                    <h3 class="poin-baris">  3. Intuitif dan Interaktif </h3>
+                    <p class="isi-baris">
+                        Peta digital lebih intuitif dan interaktif daripada peta kertas biasa. Peta dapat merespon dengan cepat 
+                        ketika pengguna mengeklik area tertentu pada peta digital, misalnya gambar jadi lebih besar atau lebih kecil. 
+                        Bahkan di versi terbaru peta digital saat ini sudah bisa merespon perintah dari suara.
+                    </p>
+                    <h3 class="poin-baris">  4. Skalabilitasnya Lebih Luas </h3>
+                    <p class="isi-baris">
+                        Apabila peta konvensional hanya bisa menyediakan gambar dengan satu jenis skala, peta digital dapat menampilkan 
+                        berbagai ukuran skala demi memperlihatkan visualisasi peta terbaik. Pengguna bisa memperbesar dan memperkecil gambar peta.
+                    </p>
+                    <h3 class="poin-baris">  5. Mudah Diakses</h3>
+                    <p class="isi-baris">
+                        Peta konvensional kurang praktis untuk dibawa bepergian mempertimbangkan dari segi ukurannya. Sebaliknya, peta digital 
+                        sudah tersedia di ponsel pintar, sehingga pengguna bisa mengaksesnya kapan saja ketika bepergian.
+                    </p>
+                    <h2 class="judul2">Metode Pembuatan Peta Digital</h2>
+                    <h3 class="poin-baris"> 1. GIS</h3>
+                    <p class="isi-baris"> 
+                        Metode GIS merupakan metode pembuatan, penyimpanan, analisa, dan interpretasi data geografis. Jika membuat peta digital 
+                        dengan menerapkan metode GIS, pengguna bisa mengamati dan menganalisa informasi pada suatu area tertentu. Mulai dari 
+                        kondisi topografinya, cuaca, demografi, dan sebagainya.
+                    </p>
+                    <p class="isi-baris">
+                        Umumnya peta digital dibuat dengan metode GIS, karena dinilai dapat memproduksi peta digital yang interaktif dan bisa 
+                        dimanfaatkan orang-orang untuk kebutuhan sehari-hari.
+                    </p>
+                    <h3 class="poin-baris"> 2. Proses Citra Satelit</h3>
+                    <p class="isi-baris">
+                        Peta digital juga dapat dibuat menggunakan metode citra satelit. Proses citra satelit memudahkan kartografer dalam 
+                        mengilustrasikan peta karena menampilkan visualisasi bumi dari atas secara spesifik. Citra satelit tingkat akurasinya 
+                        terbilang tinggi, karena menggunakan teknologi komputer yang dapat mengubah citra satelit menjadi data numerik untuk 
+                        bisa dianalisis lebih lanjut.
+                    </p>
+                    <h3 class="poin-baris"> 3. Tekonologi Drone</h3>
+                    <p class="isi-baris"> 
+                        Teknologi drone juga sering dipakai oleh kartografer untuk membuat peta digital. Kamera yang dipasangi di drone dapat 
+                        mengambil gambar lokasi tertentu di permukaan bumi dari sudut atas. Selanjutnya, hasil foto akan dipakai kartografer 
+                        dalam pembuatan peta interaktif serta memperoleh informasi terbaru tentang area tersebut.
+                    </p>
+                    <h2 class="judul2">Manfaat Peta Digital</h2>
+                    <p class="isi-baris">
+                        Dengan deretan kelebihan yang dimiliki, peta digital juga mempunyai banyak manfaat. Yuk, ketahui sejumlah manfaat 
+                        dari peta digital yang akan dijabarkan di bawah ini.
+                    </p>
+                    <p class="isi-baris">1. Dapat menunjukkan lokasi yang akurat dan presisi.</p>
+                    <p class="isi-baris">2. Peta bisa diperbarui dengan cepat berkat teknologi satelit.</p>
+                    <p class="isi-baris">3. Data sudah terintegrasi sehingga lebih efektif karena sistem update yang real time.</p>
+                    <p class="isi-baris">4. Mengeluarkan biaya yang lebih sedikit.</p>
+                    <p class="isi-baris">5. Dapat diakses di mana saja dan kapan saja asal terhubung dengan internet.</p>
+                    <p class="isi-baris">6. Dapat membagikan lokasi dengan mudah lewat sosial media, e-mail, dan berbagai platform lainnya.</p>
+
+                    
+            </body>
+        </div>
+    </body>
+</html>
